@@ -6,9 +6,7 @@
   box-sizing: border-box;
   outline: transparent;
 }
-body {
-  background-color: bisque;
-}
+
 .icon {
   cursor: pointer;
 }
@@ -49,12 +47,11 @@ i {
   padding-left: 20px;
   padding-right: 20px;
   background-color: white;
-  /* box-shadow: 1px 3px 15px -4px #cfcbcb; */
+  box-shadow: 1px 3px 15px -4px #cfcbcb;
 }
 .sidebar-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-top: 15px;
 }
 .list {
@@ -65,15 +62,16 @@ i {
 }
 ul li {
   display: inline-block;
+  width: 100%;
 }
 hr {
-  margin: 20px;
+  margin: 20px 0;
 }
 ul li a {
   color: #8a7f80;
   font-size: 1.2rem;
   display: block;
-  padding: 15px;
+  padding: 15px 0;
   text-decoration: none;
 }
 .d-flex {
@@ -88,7 +86,6 @@ ul li a {
 .numbers {
   border-radius: 50%;
   color: black;
-  margin-left: 17px;
   padding: 5px 10px;
 }
 .green {
@@ -135,17 +132,18 @@ ul li a {
   }
   .sidebar .sidebar-header {
     flex-direction: column;
+    justify-content: flex-start;
   }
   .sidebar .sidebar-header .sidebar-header-content {
     margin-bottom: 15px;
   }
   .sidebar {
-    width: 80px;
+    width: 60px;
   }
 
   .sidebar .toggle-icon i {
     display: block;
-    padding: 15px;
+    padding: 15px 0;
     font-size: 1.5rem;
     color: #8a7f80;
   }
